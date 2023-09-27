@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Terms and Conditions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      #termsText {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Terms and Conditions</h1>
+      <p>Last updated: [Date]</p>
+    </header>
+    <div class="container">
+      <button onclick="toggleTerms()">Read Terms and Conditions</button>
+      <div id="termsText">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By accessing or using this website, you agree to be bound by these
+          terms and conditions, all applicable laws, and regulations. If you do
+          not agree with any of these terms, you are prohibited from using or
+          accessing this site.
+        </p>
+
+        <h2>2. Use License</h2>
+        <p>
+          Permission is granted to temporarily download one copy of the
+          materials (information or software) on our website for personal,
+          non-commercial use only. This is the grant of a license, not a
+          transfer of title.
+        </p>
+
+        <!-- Add more terms and conditions content here -->
+
+        <h2>Contact Information</h2>
+        <p>
+          If you have any questions about our terms and conditions, please
+          contact us:
+        </p>
+        <p>Email: [Your Email Address]</p>
+
+        <p>
+          We reserve the right to amend these terms and conditions at our
+          discretion. Any changes will be posted on this page.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function toggleTerms() {
+        const termsText = document.getElementById("termsText");
+        if (termsText.style.display === "none") {
+          termsText.style.display = "block";
+        } else {
+          termsText.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

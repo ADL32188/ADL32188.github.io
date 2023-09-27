@@ -1,0 +1,7 @@
+EDIT PART
+
+
+JUDUL = high class 5 star vegetarian restaurant
+michelin certificate
+
+POPULAR COURSES = POPULAR MENU

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Privacy Policy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      #policyText {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: [Date]</p>
+    </header>
+    <div class="container">
+      <button onclick="togglePolicy()">Read Privacy Policy</button>
+      <div id="policyText">
+        <h2>Information We Collect</h2>
+        <p>We may collect and process the following information about you:</p>
+        <ul>
+          <li>Your name</li>
+          <li>Contact information, including email address</li>
+          <li>
+            Demographic information such as postal code, preferences, and
+            interests
+          </li>
+          <li>Other information relevant to customer surveys and/or offers</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+          <li>Internal record keeping</li>
+          <li>Improving our products and services</li>
+          <li>
+            Sending promotional emails about new products, special offers, or
+            other information which we think you may find interesting using the
+            email address which you have provided
+          </li>
+        </ul>
+
+        <!-- Add more policy content here -->
+
+        <h2>Contact Information</h2>
+        <p>
+          If you have any questions about our privacy policy, please contact us:
+        </p>
+        <p>Email: [Your Email Address]</p>
+
+        <p>
+          We reserve the right to amend this privacy policy at our discretion.
+          Any changes will be posted on this page.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function togglePolicy() {
+        const policyText = document.getElementById("policyText");
+        if (policyText.style.display === "none") {
+          policyText.style.display = "block";
+        } else {
+          policyText.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

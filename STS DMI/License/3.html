@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Refund Policy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      #refundForm {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Refund Policy</h1>
+      <p>Last updated: [Date]</p>
+    </header>
+    <div class="container">
+      <h2>1. Refund Eligibility</h2>
+      <p>
+        We offer refunds on [specific products or services] within [number] days
+        of the original purchase date. To be eligible for a refund, [include any
+        specific conditions or criteria for eligibility].
+      </p>
+
+      <h2>2. How to Request a Refund</h2>
+      <p>To request a refund, please follow these steps:</p>
+      <ol>
+        <li>
+          Contact our customer support team at [email address] or [phone number]
+          to initiate the refund process.
+        </li>
+        <li>Provide proof of purchase, such as an order number or receipt.</li>
+        <li>Explain the reason for your refund request.</li>
+      </ol>
+
+      <h2>3. Refund Process</h2>
+      <p>
+        Once your refund request is received and approved, we will process the
+        refund to your original method of payment. The time it takes for the
+        refund to appear in your account may vary depending on your payment
+        provider.
+      </p>
+
+      <h2>4. Non-Refundable Items</h2>
+      <p>
+        Some items or services may not be eligible for a refund. These include
+        [list any items or services that are non-refundable].
+      </p>
+
+      <h2>5. Contact Information</h2>
+      <p>
+        If you have any questions about our refund policy, please contact us:
+      </p>
+      <p>Email: [Your Email Address]</p>
+
+      <p>
+        We reserve the right to amend this refund policy at our discretion. Any
+        changes will be posted on this page.
+      </p>
+
+      <h2>Refund Request Form</h2>
+      <p>If you wish to request a refund, please fill out the form below:</p>
+      <button onclick="toggleRefundForm()">Request Refund</button>
+      <div id="refundForm">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="orderNumber">Order Number:</label>
+          <input
+            type="text"
+            id="orderNumber"
+            name="orderNumber"
+            required
+          /><br /><br />
+          <label for="reason">Reason for Refund:</label>
+          <textarea id="reason" name="reason" required></textarea><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function toggleRefundForm() {
+        const refundForm = document.getElementById("refundForm");
+        if (refundForm.style.display === "none") {
+          refundForm.style.display = "block";
+        } else {
+          refundForm.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
